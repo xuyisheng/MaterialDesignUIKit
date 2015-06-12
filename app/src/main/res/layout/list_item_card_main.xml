@@ -19,8 +19,8 @@
             <View
                 android:layout_width="2dp"
                 android:layout_height="0dp"
-                android:background="#ff1722"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="#ff1722"/>
 
             <TextView
                 android:id="@+id/tv_time"
@@ -44,33 +44,41 @@
             <View
                 android:layout_width="2dp"
                 android:layout_height="0dp"
-                android:background="#ff1722"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="#ff1722"/>
 
         </LinearLayout>
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_toRightOf="@id/ll_left"
             android:layout_margin="16dp"
-            android:background="@drawable/bg">
-
-            <TextView
-                android:id="@+id/tv_aaa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="XXXXX"/>
+            android:layout_toRightOf="@id/ll_left"
+            android:background="@drawable/bg"
+            android:gravity="center_vertical">
 
             <ImageView
                 android:id="@+id/iv_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toLeftOf="@id/tv_aaa"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/cheese_3"/>
 
-        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_aaa"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XXXXX"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </RelativeLayout>
 
